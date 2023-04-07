@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.mainBtn {
+  width: 100px;
+  height: 50px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(105, 205, 5);
+  font-size: 20px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  font-weight: 800;
+}
+.mainBtn:hover {
+  box-shadow: 0px 0px 40px rgb(84, 235, 86);
+  background-color: rgb(130, 255, 4);
+  width: 110px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.mainDiv {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(85, 143, 181);
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.modalDiv {
+  max-width: 700px;
+  width: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+img {
+  width: 400px;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.modalRight {
+  width: 100%;
+}
+.closeBtn {
+  position: fixed;
+  top: 5px;
+  right: 7px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+.btnContainer {
+  display: flex;
+  padding: 1rem 1rem;
+}
+.btnContainer button {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  color: rgb(209, 202, 202);
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+.btnPrimary {
+  background-color: rgb(37, 37, 103);
+}
+.btnPrimary:hover {
+  cursor: pointer;
+}
+.btnOutLine {
+  background-color: rgb(122, 47, 192);
+}
+.btnOutLine:hover {
+  cursor: pointer;
+}
+.bold {
+  font-weight: 700;
+  color: aliceblue;
+}
+@media screen and (max-width: 500px) {
+  .modalDiv {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100vh;
+  }
+  img {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .closeBtn {
+    color: white;
+  }
+}
